@@ -1,0 +1,14 @@
+table_add MyIngress.get_server_from_bucket MyIngress.fwd_to_server 0 => 2 10.0.0.2 00:00:0a:00:00:02
+table_add MyIngress.get_server_from_bucket MyIngress.fwd_to_server 1 => 2 10.0.0.2 00:00:0a:00:00:02
+table_add MyIngress.get_server_from_bucket MyIngress.fwd_to_server 2 => 2 10.0.0.2 00:00:0a:00:00:02
+table_add MyIngress.get_server_from_bucket MyIngress.fwd_to_server 3 => 2 10.0.0.2 00:00:0a:00:00:02
+table_add MyIngress.get_server_from_bucket MyIngress.fwd_to_server 4 => 3 10.0.0.3 00:00:0a:00:00:03
+table_add MyIngress.get_server_from_bucket MyIngress.fwd_to_server 5 => 3 10.0.0.3 00:00:0a:00:00:03
+
+table_add MyIngress.get_server_from_id_short_header MyIngress.fwd_to_server 1 => 2 10.0.0.2 00:00:0a:00:00:02
+table_add MyIngress.get_server_from_id_short_header MyIngress.fwd_to_server 2 => 3 10.0.0.3 00:00:0a:00:00:03
+
+table_add MyIngress.get_server_from_id_long_header MyIngress.fwd_to_server 1 => 2 10.0.0.2 00:00:0a:00:00:02
+table_add MyIngress.get_server_from_id_long_header MyIngress.fwd_to_server 2 => 3 10.0.0.3 00:00:0a:00:00:03
+
+register_write MyIngress.bucket_counter 0 0
