@@ -29,11 +29,17 @@ On terminal 2, 3 and 4, enter the picoquic directory. Terminal 2 will be assigne
 On the client, run 
 `mx h1`.
 
-On the servers, run `mx h2` and `mx h3`. Then on both servers, run wireshark &. This will open wireshark. You can use wireshark to monitor both the h2-eth0 and h3-eth0.
+On the servers, run 
+`mx h2` and `mx h3`
+Then on both servers, run wireshark &. This will open wireshark. You can use wireshark to monitor both the h2-eth0 and h3-eth0.
 
-Then, on h2 and h3, please run `make server1` and `make server2` respectively. This will enable the hosts in the picoquic server mode.
+Then, on h2 and h3, please run 
+`make server1` and `make server2`
+respectively. This will enable the hosts in the picoquic server mode.
 
-Then, on h1, please run `make client` to enable h1 in host mode. Repeat this command for 6 times.
+Then, on h1, please run 
+`make client`
+to enable h1 in host mode. Repeat this command for 6 times.
 
 Monitor on both wireshark interfaces that for the first four times, the requests would go to h2 and for the last two times, the requests would go to h3. If you see this result, the LB logic is correct.
 
