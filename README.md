@@ -5,7 +5,7 @@ This repository contains the P4 source codes. For modified picoquic, please refe
 
 ## Prerequisites
 
-I assume that you are using the ETH-P4 VM [link](https://github.com/nsg-ethz/p4-learning). Please refer to their tutorial to set up the environment and run the code. 
+We assume that you are using the ETH-P4 VM [link](https://github.com/nsg-ethz/p4-learning). Please refer to their tutorial to set up the environment and run the code. 
 
 ## Network topology
 
