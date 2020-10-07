@@ -1,7 +1,7 @@
 # QUIC Load Balancer Code
 This implementation contains two parts: modification on picoquic_sample of picoquic and new codes for P4 switch based on Mininet. The current LB work is stateless, based on QUIC_LB clear algorithm, and tested with simulation. Work in progress to use the obfuscated algorithm for security reasons, test with real P4 switch and implement a stateful LB.
 
-This repository contains the P4 source codes. For modified picoquic, please refer to the picoquic-mod repository.
+This repository contains the P4 source codes. For modified picoquic, please refer to the picoquic-lb repository.
 
 ## Prerequisites
 
